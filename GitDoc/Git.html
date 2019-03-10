@@ -1,16 +1,52 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" href="./index.css">
-<script src="./index.js"></script>
-<title>Comment démarrer avec Git ?</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../index.css">
+    <script src="../index.js"></script>
+    <title>Comment démarrer avec Git ?</title>
 </head>
 
 <body>
+    <div id="barrehaute">
+        <a href="../index.html">Retour à l'accueil</a>
+    </div>
+
+    <div>
     <h1>Comment démarrer avec Git ?</h1>
-<p>Eh ben ça, c'est une grande question !</p>
+    <p>Voilà une grande question ! Avant de démarrer, voyons rapidement à quoi sert Git.</p>
+    
+    <h2>Qu'est-ce que Git ?</h2>
+    <p>C'est un logiciel de gestion de versions (pour les détails, voir sur Wikipedia).<br/>
+        L'essentiel à savoir est que Git indexe les fichiers en se basant sur leur somme de contrôle.
+        Lorsqu'on lui demande de "faire une sauvegarde d'un projet", il regarde pour chaque fichier du projet si 
+        sa somme de contrôle a changé. Si c'est le cas, il sauvegarde la nouvelle version (en plus de l'ancienne 
+        qu'il conserve) et sinon il conserve juste la vieille version sans rien toucher.<br/>
+        Dans la réalité des faits, c'est un peu plus compliqué car on peut, pour un projet donné, lui demander de 
+        suivre et sauvegarder les versions de certains des fichiers et d'en ignorer totalement d'autres.
+    </p>
+    
+    <h2>Installation</h2>
+    <p>Eh oui, pour démarrer Git, il vaut mieux commencer par l'installer !<br/>
+        On le trouve sur le Web à l'adresse <a href="https://git-scm.com" target="blank">https://git-scm.com</a>.
+        Sur le même site, il y a une documentation complète (en anglais). Il y a également un manuel, accessible en ligne 
+        ou sous forme de d'e-book, en une multitude de langues dont le <a href="https://git-scm.com/book/fr/v2" 
+        target="blank">français</a>.<br/>
+        L'installation se fait de façon naturelle. Pour s'en servir ensuite, c'est une autre paire de manches !<br/>
+        Par défaut, Git s'utilise en ligne de commande. Personnellement, ayant à utiliser à la fois Git, un éditeur 
+        de texte pour les fichiers du projet et à assurer le transfert sur GitHub pour mettre le résultat en ligne, j'ai 
+        installé <a href="https://code.visualstudio.com" target="blank">Microsoft Visual Studio Code</a> (Microsoft, mais 
+        OpenSource quand même) qui sait faire tout ça. Ce n'est absolument pas obligatoire.<br/>
+        De même, souhaitant avoir une sauvegarde distante et publier un site Web, j'ai ouvert un compte sur 
+        <a href="https://github.com" target="blank">GitHub</a>. Si le seul objectif est une gestion de version locale, 
+        on peut s'en dispenser.<br/>
+    </p>
+    </div>
+
+    <div id="barrebasse">
+        Pied de page à compléter
+    </div>
 </body>
 </html>

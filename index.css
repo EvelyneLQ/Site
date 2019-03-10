@@ -1,0 +1,48 @@
+@charset "UTF-8" ;
+
+body{
+    font-size: 1.5vw ;
+    background-color: palegoldenrod;
+    height: 94vh;
+    margin: 3vh;
+}
+
+#barrehaute{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin:1px;
+    text-align: center;
+    font-size: 2vh;
+    height: 3vh;
+    background-color: aqua ;
+}
+
+#barrebasse{
+    position: fixed ;
+    top: 97vh;
+    left: 0;
+    width: 100vw;
+    margin: 1px;
+    text-align: center;
+    font-size: 2vh;
+    height: 3vh;
+    background-color: burlywood;
+}
+
+h1{
+    font-size: 4vw ;
+    text-align: center ;
+    border-color: brown;
+    border-style: groove;
+    border-radius: 3vh;
+    border-width: 2px;
+}
+
+h2{
+    font-size: 3vw ;
+    background-color: blueviolet;
+    display:inline;
+    border-radius: 2vh;
+}
