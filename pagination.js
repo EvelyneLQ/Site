@@ -1,6 +1,6 @@
 async function init() {
     alert("zut");
-    const navigation=await fetch("pagination.html");
+    const navigation=await fetch("theme.html");
     alert("rezut");
     const aecrire=await navigation.text();
     alert("rerezut");
