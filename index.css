@@ -4,11 +4,14 @@ body{
     font-size: 1.5vw ;
     background-color: palegoldenrod;
     height: 94vh;
-    margin: 3vh;
+    width: 85vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
     text-align: justify;
 }
 
-#barrehaute{
+header{
     position: fixed ;
     top: 0;
     left: 0;
@@ -20,7 +23,7 @@ body{
     background-color: aqua ;
 }
 
-#barrebasse{
+footer{
     position: fixed ;
     top: 97vh;
     left: 0;
@@ -32,18 +35,37 @@ body{
     background-color: burlywood;
 }
 
+nav{position:fixed;
+top:3vh;
+left:0;
+width: 8vw;
+height: 94vh;
+font-size:2vh;
+background-color: chartreuse;
+}
+
+aside{position:fixed;
+top:10vh;
+left:80vw;
+width:18vw;
+height:15vh;
+background-color: darkorange;
+opacity:0.3;
+}
+
 h1{
     font-size: 4vw ;
+    width: max-content+2em;
     text-align: center ;
     border-color: brown;
     border-style: groove;
-    border-radius: 3vh;
+    border-radius: 1em;
     border-width: 2px;
 }
 
 h2{
+    width: max-content;
     font-size: 3vw ;
     background-color: blueviolet;
-    display:inline;
-    border-radius: 2vh;
+    border-radius: 0.2em;
 }
