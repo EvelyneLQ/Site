@@ -1,7 +1,8 @@
-document.addEventListener("DOMContentLoaded",() => init());
-
 async function init() {
-    const reponse = await fetch("../pagination.html");
-    const texte= await reponse.text();
-    document.body.innerHTML=texte;
+    alert("zut");
+    const navigation=await fetch("pagination.html");
+    alert("rezut");
+    const aecrire=await navigation.text();
+    alert("rerezut");
+    document.body.insertAdjacentHTML('afterbegin',aecrire);
 }
