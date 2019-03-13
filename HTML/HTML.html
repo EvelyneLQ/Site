@@ -40,39 +40,64 @@
     </p>
 
     <p>Le code la page se décompose lui-même en deux parties :
-        <li>un en-tête encadré par les balises 
-            <code>&lt;head&gt; ... &lt;/head&gt;</code> ;
-        </li>
-        <li>le corps du texte qui va être affiché dans la page, encadré par les 
-            balises <code>&lt;body&gt; ... &lt;/body&gt;</code>.
-        </li>
+        <ul>
+            <li>un en-tête encadré par les balises 
+                <code>&lt;head&gt; ... &lt;/head&gt;</code> ;
+            </li>
+            <li>le corps du texte qui va être affiché dans la page, encadré par les 
+               balises <code>&lt;body&gt; ... &lt;/body&gt;</code>.
+            </li>
+        </ul>
     </p>
 
     <h2>Le contenu de l'en-tête</h2>
     <p>L'en-tête contient :
-        <li>une commande indiquant quel est l'encodage de caractères utilisé, par 
-            exemple :
-            <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
-        </li>
-        <li>une commande indiquant le titre de la page (celui qui est affiché 
-            dans l'onglet du navigateur), sous la forme :
-            <pre><code>&lt;title&gt;Titre de la page&lt;/title&gt;</code></pre>
-        </li>
-        <li>un lien vers la page CSS qui définit les styles utilisés dans la page :
-            <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
-            Le lien vers ce fichier de styles doit bien sûr être indiqué avec son 
-            chemin d'accès, par exemple sous la forme 
-            <pre><code>"../MonDossier/MonSousDossier/styles.css"</code></pre>
+        <ul>
+            <li>une commande indiquant quel est l'encodage de caractères utilisé, par 
+                exemple :
+                <pre><code>&lt;meta charset="UTF-8"&gt;</code></pre>
+            </li>
+            <li>une commande indiquant le titre de la page (celui qui est affiché 
+                dans l'onglet du navigateur), sous la forme :
+                <pre><code>&lt;title&gt;Titre de la page&lt;/title&gt;</code></pre>
+            </li>
+            <li>un lien vers la page CSS qui définit les styles utilisés dans la page :
+                <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+                Le lien vers ce fichier de styles doit bien sûr être indiqué avec son 
+                chemin d'accès, par exemple sous la forme 
+                <pre><code>"../MonDossier/MonSousDossier/styles.css"</code></pre>
+            </li>
+            <li>
+                Éventuellement, un lien vers le fichier de scripts Javascript utilisés 
+                par la page (avec son chemin d'accès également) :
+                <pre><code>&lt;script src="scripts.js"&gt;</script></code></pre>
+            </li>
+        </ul>
+    </p>
+
+    <h2>Le contenu du corps de page</h2>
+    <p>Entre les balises <code>&lt;body&gt;...&lt;/body&gt;</code>, on trouve tout ce que l'on veut
+    faire afficher sur la page. Essentiellement :
+    <ul>
+        <li>des titres encadrés par les balises <code>&lt;h1&gt;...&lt;/h1&gt;</code> jusqu'à 
+            <code>&lt;h6&gt;...&lt;/h6&gt;</code> si on a vraiment besoin de nombreux niveaux de titre.<br/>
+            Il ne devrait y avoir dans la page qu'un seul titre de niveau h1 : le titre de la page.
+            Les titres de niveau h2 définissent les titres principaux puis les titres de niveau h3 sont les sous-titres ...<br/>
+            Pour l'esthétique et la numérotation des titres, voir dans la page de <a href="../CSSDoc/CSS.html">CSS</a>.
         </li>
         <li>
-            Éventuellement, un lien vers le fichier de scripts Javascript utilisés 
-            par la page (avec son chemin d'accès également) :
-            <pre><code>&lt;script src="scripts.js"&gt;</script></pre>
-
+            du texte. Les balises <code>&lt;p&gt;...&lt;/p&gt;</code> encadrent chaque paragraphe.
+            On peut forcer un passage à la ligne sans changer de paragraphe en insérant la balise <code>&lt;br/&gt;</code> :
+            exceptionnellement, cette balise voyage seule sans son doublon. Le slash à la fin indique qu'elle est 
+            auto-fermante.
+        </li>
+        <li>
+            On peut choisir d'insérer un en-tête avec <code>&lt;header&gt;...&lt;/header&gt;</code>, 
+            un pied de page avec <code>&lt;footer&gt;...&lt;/footer&gt;</code>, 
         </li>
 
-
-
+    </ul>
+    </p>
 </body>
 
 </html>
