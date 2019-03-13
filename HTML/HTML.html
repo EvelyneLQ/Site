@@ -9,13 +9,18 @@
     <title>L'essentiel en HTML</title>
 </head>
 
-<body>
-    <h1>Ecriture de pages en HTML</h1>
+<body onload="init()">
+    <h1>Écriture de pages en HTML</h1>
     <p>HTML signifie <em class="anglais">HyperText Markup Language</em> : c'est un langage de balisage
         qui sert à écrire de l'hypertexte.
     </p>
-    <p>La mise en forme du texte se fait à l'aide de <mark>balises</mark> 
-        de la forme <code>&lt;balise&gt;Texte de la balise &lt;/balise&gt;</code>.
+    <p>Le texte est défini à l'aide de <mark>balises</mark> 
+        de la forme <code>&lt;balise&gt;Texte de la balise&lt;/balise&gt;</code>.
+    </p>
+    <p>Une remarque importante : pour faire les choses de façon propre, ne définir dans le HTML que le 
+        contenu textuel de la page. Sa mise en page visuelle (par exemple l'esthétique des différents titres, la 
+        couleur du fond de page ...) est définie dans <a href="../CSSDoc/CSS.html">un fichier de styles CSS</a>, 
+        appelé par le fichier HTML au moment du chargement de la page dans le navigateur.
     </p>
 
     <h2>Structure d'une page HTML</h2>
@@ -56,7 +61,8 @@
         <li>un lien vers la page CSS qui définit les styles utilisés dans la page :
             <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
             Le lien vers ce fichier de styles doit bien sûr être indiqué avec son 
-            chemin d'accès.
+            chemin d'accès, par exemple sous la forme 
+            <pre><code>"../MonDossier/MonSousDossier/styles.css"</code></pre>
         </li>
         <li>
             Éventuellement, un lien vers le fichier de scripts Javascript utilisés 
@@ -64,11 +70,7 @@
             <pre><code>&lt;script src="scripts.js"&gt;</script></pre>
 
         </li>
-            
-            
-        </head>
-        
-        <body></p>
+
 
 
 </body>

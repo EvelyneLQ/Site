@@ -9,6 +9,7 @@ body{
     margin-bottom: 3vh;
     margin-left: 12vw;
     text-align: justify;
+    counter-reset: titre2;
 }
 
 header{
@@ -35,22 +36,24 @@ footer{
     background-color: burlywood;
 }
 
-nav{position:fixed;
-top:3vh;
-left:0;
-width: 8vw;
-height: 94vh;
-font-size:2vh;
-background-color: chartreuse;
+nav{
+    position:fixed;
+    top:3vh;
+    left:0;
+    width: 8vw;
+    height: 94vh;
+    font-size:2vh;
+    background-color: chartreuse;
 }
 
-aside{position:fixed;
-top:10vh;
-left:80vw;
-width:18vw;
-height:15vh;
-background-color: darkorange;
-opacity:0.3;
+aside{
+    position:fixed;
+    top:10vh;
+    left:80vw;
+    width:18vw;
+    height:15vh;
+    background-color: darkorange;
+    opacity:0.3;
 }
 
 h1{
@@ -68,4 +71,10 @@ h2{
     font-size: 3vw ;
     background-color: blueviolet;
     border-radius: 0.2em;
+    counter-reset: titre3;
+}
+
+h2::before{
+    counter-increment: titre2;
+    content: counter(titre2, upper-roman)". ";
 }
