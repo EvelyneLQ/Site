@@ -12,6 +12,29 @@ body{
     counter-reset: titre2;
 }
 
+h1{
+    font-size: 4vw ;
+    width: max-content+2em;
+    text-align: center ;
+    border-color: brown;
+    border-style: groove;
+    border-radius: 1em;
+    border-width: 2px;
+}
+
+h2{
+    width: max-content;
+    font-size: 3vw ;
+    background-color: blueviolet;
+    border-radius: 0.2em;
+    counter-reset: titre3;
+}
+
+h2::before{
+    counter-increment: titre2;
+    content: counter(titre2, upper-roman)". ";
+}
+
 header{
     position: fixed ;
     top: 0;
@@ -54,27 +77,4 @@ aside{
     height:15vh;
     background-color: darkorange;
     opacity:0.3;
-}
-
-h1{
-    font-size: 4vw ;
-    width: max-content+2em;
-    text-align: center ;
-    border-color: brown;
-    border-style: groove;
-    border-radius: 1em;
-    border-width: 2px;
-}
-
-h2{
-    width: max-content;
-    font-size: 3vw ;
-    background-color: blueviolet;
-    border-radius: 0.2em;
-    counter-reset: titre3;
-}
-
-h2::before{
-    counter-increment: titre2;
-    content: counter(titre2, upper-roman)". ";
 }
