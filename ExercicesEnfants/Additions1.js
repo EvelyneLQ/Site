@@ -15,7 +15,7 @@ function initN() {
 function affiche() {
     document.body.insertAdjacentHTML('beforeend','<p>Complète :</p>');
     for (var i=0 ; i<5; i++) {
-        document.body.insertAdjacentHTML('beforeend',"<p>"+N[2*i]+"+"+N[2*i+1]+"=<input id="+'"somme'+i+'"></p>');
+        document.body.insertAdjacentHTML('beforeend',"<p>"+N[2*i]+" + "+N[2*i+1]+"=<input id="+'"somme'+i+'"></p>');
     };
     document.body.insertAdjacentHTML('beforeend',"<button onclick="+'"addition()"'+">Valider</button>");
 }
