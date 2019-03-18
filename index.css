@@ -14,7 +14,7 @@ body{
 
 h1{
     font-size: 4vw ;
-    width: max-content+2em;
+    width: calc(max-content+2em);
     text-align: center ;
     border-color: brown;
     border-style: groove;
@@ -70,7 +70,9 @@ nav{
 }
 
 aside{
-    position:fixed;
+    position:float;
+    float: right;
+    padding: 1em;
     top:10vh;
     left:80vw;
     width:18vw;

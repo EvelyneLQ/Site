@@ -1,0 +1,54 @@
+@charset "UTF-8" ;
+
+body{
+    font-size: 1.5vw ;
+    background-color: palegoldenrod;
+    height: 94vh;
+    width: 85vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 12vw;
+    text-align: justify;
+    counter-reset: titre2;
+}
+
+h1{
+    font-size: 4vw ;
+    width: calc(max-content+2em);
+    text-align: center ;
+    border-color: brown;
+    border-style: groove;
+    border-radius: 1em;
+    border-width: 2px;
+}
+
+h2{
+    width: max-content;
+    font-size: 3vw ;
+    background-color: blueviolet;
+    border-radius: 0.2em;
+    counter-reset: titre3;
+}
+
+h2::before{
+    counter-increment: titre2;
+    content: counter(titre2, upper-roman)". ";
+}
+
+h3{
+    text-align: center;
+    font-size: 5vw;
+    color: gold;
+}
+
+header{
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin:1px;
+    text-align: center;
+    font-size: 2vh;
+    height: 3vh;
+    background-color: aqua ;
+}
