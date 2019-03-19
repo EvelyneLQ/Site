@@ -35,12 +35,11 @@ h2::before{
     content: counter(titre2, upper-roman)". ";
 }
 
-h3{
+h4{
     text-align: center;
-    font-size: 5vw;
-    color: gold;
+    font-size: 4vw;
+    color: coral;
 }
-
 header{
     position: fixed ;
     top: 0;
