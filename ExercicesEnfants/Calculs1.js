@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",() => initN());
 function initN() {
     document.body.insertAdjacentHTML('afterbegin','<header><a href="Exercices.html">Retour au choix général</a></header>');
     for (var i=0 ; i<10 ; i++) {
-        N[i]=Math.floor(Math.random()*8+1); //Choix des dix entiers aléatoires
+        N[i]=Math.floor(Math.random()*9+1); //Choix des dix entiers aléatoires
     };
     for (var i=0 ; i<5; i++) {
         s[i]=N[2*i]+N[2*i+1];  //Calcul des sommes
